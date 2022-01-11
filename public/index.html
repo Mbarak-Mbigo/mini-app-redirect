@@ -8,16 +8,19 @@
     <title>Payoneer Mini App</title>
   </head>
   <body class="container">
-    <h1>MINI APP WEB-VIEW TEST</h1>
+    <h1>MINI APP WEB-VIEW</h1>
     <script>
       // my.navigateTo({ url: "/pages/home/home" });
 
-      // Send message to Mini Program.
+      // Send message to Mini Program. // login secret code
       my.postMessage({ sendToMiniProgram: "0" });
 
       // Did receive message from Mini Program.
       my.onMessage = function (e) {
         console.log("htmlPage: received message", e); // {'sendToWebView': '1'}
+        my.navigateTo({
+          url: "/pages/success/success",
+        });
       };
       // Check if is run in Mini Program environment
       my.getEnv(function (res) {
