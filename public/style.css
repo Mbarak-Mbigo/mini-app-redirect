@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,5 +10,10 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: darkgrey;
+  background-color: #3AB549;
+}
+
+.saf-img {
+  width: 90vw;
+  height: 100px;
 }
